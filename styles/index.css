@@ -96,7 +96,7 @@ main{
 h1{
     color: #ffffff;
     padding: 30px;
-    font-size: 60px;
+    font-size: 70px;
     font-family: 'fuenteBandori';
     text-shadow: -1px -1px 0 black,
     1px -1px 0 black,
@@ -117,10 +117,10 @@ h1{
     line-height: 1.2;
 }
 
-h2{
+h2, h3{
     color: #ffffff;
     padding: 30px;
-    font-size: 40px;
+    font-size: 55px;
     font-family: 'fuenteBandori';
     text-shadow: -1px -1px 0 black,
     1px -1px 0 black,
@@ -128,11 +128,16 @@ h2{
     1px  1px 0 black;
 }
 
+h3{
+    font-size: 40px;
+}
+
 .muestralbum {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 40px 80px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 80px;
+    scroll-margin-top: 120px;
 }
 
 .muestralbum img{
@@ -150,9 +155,57 @@ h2{
     width: 100%;
 }
 
-.canciones{
-    display: flex;
-    flex: 1;
+.cancionesGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 40px 80px;
-    align-items: center;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.cancion {
+    background-color: #6756a656;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.cancion iframe{
+    padding: 30px;
+    padding-top: 0px;
+}
+
+.spotify{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 80px;
+    text-align: center;
+}
+
+.spotify iframe{
+    padding: 0px 200px;
+    height: 500px;
+}
+
+.infointegrantes{
+    padding: 40px 80px;
+    text-align: center;
+}
+
+.integrantes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 90px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.integrante{
+    width: 500px;
+    text-align: center;
+}
+
+.integrante img{
+    height: 500px;
 }
