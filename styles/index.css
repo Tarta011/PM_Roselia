@@ -191,6 +191,7 @@ h3{
 .infointegrantes{
     padding: 40px 80px;
     text-align: center;
+    scroll-margin-top: 70px;
 }
 
 .integrantes{
@@ -208,4 +209,43 @@ h3{
 
 .integrante img{
     height: 500px;
+}
+
+.mediainfo{
+    padding: 20px 80px;
+    text-align: center;
+    scroll-margin-top: 90px;
+}
+
+.lives{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+footer{
+    text-align: center;
+    background-color: #0D0D0D;
+    align-items: center;
+    z-index: 200;
+}
+
+footer ul {
+    display: flex;
+    font-size: 30px;
+    font-family: fuenteBandori;
+    justify-content: center;
+    gap: 200px;
+    padding-bottom: 40px;
+    list-style-type: none;
+}
+
+footer ul a{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #6B7FF2;
+    text-decoration: none;
 }
