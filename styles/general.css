@@ -77,12 +77,12 @@ header{
 }
 
 #menu:target ~ header .abrir {
-  display: none;
+    display: none;
 }
 
 
 #menu:target ~ header .cerrar {
-  display: inline;
+    display: inline;
 }
 
 main{
