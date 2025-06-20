@@ -1,0 +1,62 @@
+.tapado{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: #0d0d0d;
+    opacity: 0;
+    transition: background-color 1s ease, opacity 1s ease;
+    pointer-events: none;
+}
+
+#menu:target ~ .tapado{
+    opacity: 1;
+    background-color: #000000ad;
+    pointer-events: none;
+}
+
+.hoverfacha{
+    font-size: 2rem;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+}
+
+.hoverfacha::after,
+.hoverfacha::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0511F2, #6B7FF2);
+    bottom: 15px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease-out;
+}
+
+.hoverfacha::before {
+    top: 15px;
+    transform-origin: left;
+}
+
+.hoverfacha:hover::after,
+.hoverfacha:hover::before {
+    transform: scaleX(1);
+}
+
+.zoomhover {
+    transition: transform 0.4s ease;
+}
+
+.zoomhover:hover {
+    transform: scale(1.1);
+}
+
+#menu:target ~ main .zoomhover:hover {
+    transform: none !important;
+    cursor: default;
+}

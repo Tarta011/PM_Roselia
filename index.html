@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles/index.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/dinamismo.css">
+    <title>Roselia</title>
+    <link rel="icon" href="./imagenes/logo.svg">
 </head>
 <body>
     <div id="menu"> 
-        <a href="#">Inicio</a>
-        <a href="#album">Nuevo Album</a>
-        <a href="#chicas">Integrantes</a>
-        <a href="#presentaciones">Media</a>
+        <a class="hoverfacha" href="#">Inicio</a>
+        <a class="hoverfacha" href="#album">Nuevo Album</a>
+        <a class="hoverfacha" href="#chicas">Integrantes</a>
+        <a class="hoverfacha" href="#presentaciones">Media</a>
     </div>
+    <div class="tapado"></div>
     <header>
         <img class="logoR" src="./imagenes/Roselia_logo.jpg" alt="Logo Roselia">
+        <div class="audio">
+            <audio controls loop>
+                <source src="./imagenes/overtuRe.mp3" type="audio/mpeg">
+            </audio>
+        </div>
         <nav class="menuburger">
             <a href="#menu" class="abrir">
                 <svg xmlns="http://www.w3.org/2000/svg" height="48px"
@@ -49,11 +58,12 @@
             <img src="./imagenes/Album.jpg" alt="Foto del Album" width="30%">
             <div class="lorealbum">
                 <h2>Wahl</h2>
-                <p class="texto"> Wahl es el segundo album de estudio de Roselia. Se lanzo el
-                    15 de julio de 2020. La edicion limitada incluye discos Blu-ray para cada
-                    dia del concierto en solitario del grupo, Flamme/Wasser, celebrado en el
-                    Fuji-Q Highland Conifer Forest en agosto de 2019. Este album esta compuesto
-                    por un total de 12 canciones.
+                <p class="texto"> Wahl es el segundo album de estudio de Roselia. Se lanzo este
+                    15 de junio de 2025. Comprando la edicion limitada, te viene incluido los
+                    discos Blu-ray para cada dia del concierto en solitario del grupo, Flamme/Wasser,
+                    celebrado en el Fuji-Q Highland Conifer Forest en agosto de 2019. Este album
+                    esta compuesto por un total de 12 canciones. A continuacion te las dejo para que
+                    escuches.
                 </p>
             </div>
         </div>
@@ -121,35 +131,35 @@
             <div class="integrantes">
                 <div class="integrante">
                     <h3>Yuki Nakashima</h3>
-                    <img src="./imagenes/Yuki.jpg" alt="Foto de la vocalista">
+                    <img class="zoomhover" src="./imagenes/Yuki.jpg" alt="Foto de la vocalista">
                     <p class="texto">Interpreta el papel del personaje "Lisa Imai".
                         Ella aporta a la banda con su increible bajo.
                     </p>
                 </div>
                 <div class="integrante">
                     <h3>Aiba Aina</h3>
-                    <img src="./imagenes/AiAi.jpg" alt="Foto de la vocalista">
+                    <img class="zoomhover" src="./imagenes/AiAi.jpg" alt="Foto de la vocalista">
                     <p class="texto">Interpreta el papel del personaje "Yukina Minato".
                         Ella es la vocalista principal de la banda.
                     </p>
                 </div>
                 <div class="integrante">
                     <h3>Haruka Kudo</h3>
-                    <img src="./imagenes/Kudo.jpg" alt="Foto de la vocalista">
+                    <img class="zoomhover" src="./imagenes/Kudo.jpg" alt="Foto de la vocalista">
                     <p class="texto">Interpreta el papel del personaje "Sayo Hikawa".
                         Ella y sus solos de guitarra no tienen comparacion.
                     </p>
                 </div>
                 <div class="integrante">
                     <h3>Kanon Shizaki</h3>
-                    <img src="./imagenes/Shizaki.jpg" alt="Foto de la vocalista">
+                    <img class="zoomhover" src="./imagenes/Shizaki.jpg" alt="Foto de la vocalista">
                     <p class="texto">Interpreta el papel del personaje "Rinko Shirokane".
                         Ella maneja el teclado a otro nivel.
                     </p>
                 </div>
                 <div class="integrante">
                     <h3>Megu Sakuragawa</h3>
-                    <img src="./imagenes/Megu.jpg" alt="Foto de la vocalista">
+                    <img class="zoomhover" src="./imagenes/Megu.jpg" alt="Foto de la vocalista">
                     <p class="texto">Interpreta el papel del personaje "Ako Udagawa".
                         Ella y su bateria la rompen en el escenario.
                     </p>

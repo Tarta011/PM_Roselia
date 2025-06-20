@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    background-color: aliceblue;
+    padding: 15px 80px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+
+.audio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+.logoR{
+    width: 200px;
+}
+
+.menuburger{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 300;
+}
+
+.menuburger .cerrar {
+    display: none;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #210140;
+    height: 100vh;
+    width: 400px;
+    position: fixed;
+    right: -1000px;
+    transition: right 1s ease;
+    z-index: 100;
+    top: 117px;
+}
+
+#menu a {
+    color: #6AAED9;
+    padding: 60px;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'fuenteBandori';
+    font-weight: 400px;
+    text-align: center;
+    border-bottom: 2px solid;
+    border-color: #6AAED9;
+}
+
+#menu:target{
+    right: 0;
+    z-index: 200;
+}
+
+#menu:target ~ header .abrir {
+  display: none;
+}
+
+
+#menu:target ~ header .cerrar {
+  display: inline;
+}
+
+main{
+     background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)),
+        url(../imagenes/FondoRoselia.webp);
+     background-size: cover;
+     background-attachment: fixed;
+     padding-top: 117px;
+}
+
+h1{
+    color: #ffffff;
+    padding: 30px;
+    font-size: 70px;
+    font-family: 'fuenteBandori';
+    text-shadow: -1px -1px 0 black,
+    1px -1px 0 black,
+   -1px  1px 0 black,
+    1px  1px 0 black;
+}
+
+.texto{
+    color: #ffffff;
+    padding: 30px 60px;
+    font-size: 30px;
+    font-family: 'fuenteBandori';
+    text-shadow: -1px -1px 0 black,
+    1px -1px 0 black,
+   -1px  1px 0 black,
+    1px  1px 0 black;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+h2, h3{
+    color: #ffffff;
+    padding: 30px;
+    font-size: 55px;
+    font-family: 'fuenteBandori';
+    text-shadow: -1px -1px 0 black,
+    1px -1px 0 black,
+   -1px  1px 0 black,
+    1px  1px 0 black;
+}
+
+h3{
+    font-size: 40px;
+}
+
+footer{
+    text-align: center;
+    background-color: #0D0D0D;
+    align-items: center;
+    z-index: 200;
+}
+
+footer ul {
+    display: flex;
+    font-size: 30px;
+    font-family: fuenteBandori;
+    justify-content: center;
+    gap: 200px;
+    padding-bottom: 40px;
+    list-style-type: none;
+}
+
+footer ul a{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.3s ease; color: 0.3s ease;
+}
+
+footer ul a:hover{
+    color: #6B7FF2;
+    transform: scale(1.1);
+}
